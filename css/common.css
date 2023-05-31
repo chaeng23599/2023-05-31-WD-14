@@ -37,31 +37,38 @@ body{
     padding: 20px 0;
 }
 
+.gnb > li{
+    position: relative;
+}
 .gnb > li > a{
     display: block;
-    padding: 14px;
-    border-bottom: 1px solid #ccc;
-    font-weight: bold;
+    padding: 16px;
 }
-
 .gnb > li:hover > a{
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 .gnb ul{
     display: none;
-    background-color: #eee;
+    position: absolute;
+    top: -20px;
+    left: 160px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    background-color: slateblue;
+    color: yellow;
 }
-
 .gnb ul li a{
     display: block;
-    padding: 10px 16px;
+    padding: 6px;
+    text-align: center;
 }
 
 .gnb ul li a:hover{
-    background-color: #ddd;
+    background-color: #eee;
+    color: blue;
 }
-
 .main{
     flex: 1;
 }
